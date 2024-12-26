@@ -1,0 +1,114 @@
+.ppi{
+    background: var(--gradient-color);
+    position: relative;
+    z-index: 1;
+    padding: 48px 0;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--banner-layer);
+        z-index: -1;
+        top: 0;
+    }
+
+    .container_ppi{
+        padding: 48px 15px ;
+        margin: 0 auto;
+        @media (max-width: 480px) { 
+            max-width: 420px;
+        }
+    
+        @media (max-width: 768px) { 
+            max-width: 680px;
+        }
+    
+        @media (min-width: 1025px) { 
+            max-width: 1200px;
+        }
+
+        .content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+
+            .img_of_content{
+                padding: 0 48px 0 12px;
+
+                img{
+                    border-radius: var(--border-radius);
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .text-content{
+            padding: 0 12px;
+
+            .heading_ppi{
+                margin-bottom: 48px;
+
+                h3{
+                    font-size: 45px;
+                    line-height: 55px;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                }
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: var(--heading-color);
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+
+            .list-sl{
+                padding-top: 24px;
+                
+                .line{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                    margin-top: 48px;
+                    border-bottom: 1px solid var(--heading-color);
+
+                    h3{
+                        font-size: 24px;
+                        font-weight: 600;
+                        padding: 0 12px;
+                    }
+                    
+                    p{
+                        font-weight: bold;
+                        font-size: 26px;
+                        padding: 0 12px;
+                    }
+                }
+            }
+
+            .btn-ppi{
+                margin-top: 48px;
+                margin-left: 12px;
+                padding: 12px 36px 14px;
+                font-size: 16px;
+                color: #fff;
+                border-radius: var(--border-radius-full);
+                font-weight: bold;
+                outline: none;
+                border: none;
+                background: var(--primary-color);
+                transition: all 1.8s ease-in-out;
+
+                &:hover{
+                    background-color: var(--secondary-color);
+                }
+            }
+        }
+    }
+}

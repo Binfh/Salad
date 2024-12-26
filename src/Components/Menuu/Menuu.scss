@@ -1,0 +1,29 @@
+.Menuu{
+    margin-top: 16px;
+    padding: 48px 0;
+
+    .container_menu{
+        padding: 48px 15px ;
+        margin: 0 auto;
+        width: 100%;
+        @media (max-width: 480px) { 
+            max-width: 420px;
+        }
+    
+        @media (max-width: 768px) { 
+            max-width: 680px;
+        }
+    
+        @media (min-width: 1025px) { 
+            max-width: 1200px;
+        }
+
+        .title_menu{
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: bold;
+            margin-bottom: 48px;
+            text-align: center;
+        }
+    }
+}
