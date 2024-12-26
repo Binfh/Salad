@@ -8,8 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start-api": "node server.js",
-    "dev:all": "concurrently \"npm run start-api\" \"npm run dev\""
+    "start-api": "node api/index.js",
+    "dev:all": "concurrently \"npm run start-api\" \"npm run dev\"",
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
