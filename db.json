@@ -5,42 +5,42 @@
             "name" : "Easy Pasta Salad", 
             "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
             "price" : 19.5 ,
-            "image" : ""
+            "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m1.jpg"
         },
         { 
             "id": 2,
             "name" : "Rainbow Orzo Salad", 
             "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
             "price" : 10.5 ,
-            "image" : ""
+            "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m2.jpg"
         },
         { 
             "id": 3,
             "name" : "Creamy Vegan Salad", 
             "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
             "price" : 13.9 ,
-            "image" : ""
+            "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m3.jpg"
         },
         { 
             "id": 4,
             "name" : "Broccoli Salad", 
             "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
             "price" : 12.7 ,
-            "image" : ""
+            "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m4.jpg"
         },
         { 
             "id": 5,
             "name" : "Cherry Tomato Salad", 
             "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
             "price" : 18.3 ,
-            "image" : ""
+            "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m5.jpg"
         },
         { 
             "id": 6,
             "name" : "Healthy Taco Salad", 
             "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
             "price" : 16.0 ,
-            "image" : ""
+            "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m6.jpg"
         }
       
     ]
