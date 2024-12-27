@@ -41,8 +41,133 @@
             "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
             "price" : 16.0 ,
             "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m6.jpg"
+        },
+        { 
+            "id": 7,
+            "name" : "Mediterranean Chickpea Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 14.9,
+            "image" : "https://aubreyskitchen.com/wp-content/uploads/2020/08/mediterranean-chickpea-salad-square.jpg"
+        },
+        { 
+            "id": 8,
+            "name" : "Caesar Salad with Croutons", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 15.5,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSARMfL_JIrXmdRiHBhQyAp1MLXxMBoQt_8MA&s"
+        },
+        { 
+            "id": 9,
+            "name" : "Quinoa Avocado Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 17.8,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgX5Dl6nIsTJYiildZpp53CMhMJ-7KHSUaGQ&s"
+        },
+        { 
+            "id": 10,
+            "name" : "Kale Cranberry Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 11.3,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJD6x5NKm4oamPYTOx4VYD12gjqjbWP4LcQ&s"
+        },
+        { 
+            "id": 11,
+            "name" : "Avocado Mango Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 19.2,
+            "image" : "https://img.taste.com.au/dYjhlJoQ/taste/2016/11/lettuce-avocado-and-mango-salad-59642-1.jpeg"
+        },
+        { 
+            "id": 12,
+            "name" : "Thai Peanut Noodle Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 18.0,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbiwzmk7P4TZwjALdWf4KjQ9hiuQiaSK4gg&s"
+        },
+        { 
+            "id": 13,
+            "name" : "Grilled Chicken Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 20.5,
+            "image" : "https://hips.hearstapps.com/hmg-prod/images/grilled-chicken-salad-index-6628169554c88.jpg?crop=0.8890484453220048xw:1xh;center,top&resize=1200:*"
+        },
+        { 
+            "id": 14,
+            "name" : "Fruit & Nut Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 13.6,
+            "image" : "https://wishesndishes.com/images/2013/08/Fruit-and-Nut-Salad-2.jpg"
+        },
+        { 
+            "id": 15,
+            "name" : "Spinach Strawberry Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 14.5,
+            "image" : "https://www.simplejoy.com/wp-content/uploads/2018/05/strawberry_spinach_salad_recipe_image.jpg"
+        },
+        { 
+            "id": 16,
+            "name" : "Greek Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 12.9,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVszQzT5Yler0fycOCa3f6d06GXPyjKxl7rg&s"
+        },
+        { 
+            "id": 17,
+            "name" : "Cucumber Dill Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 10.8,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmCx2paso7bq0ASfVL2zVtF8nZu3QkczBpUg&s"
+        },
+        { 
+            "id": 18,
+            "name" : "Roasted Beet Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 16.7,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Wv8lK2iEDC6eH1EA0EsTft3l5nwlzDnW6g&s"
+        },
+        { 
+            "id": 19,
+            "name" : "Asian Sesame Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 15.2,
+            "image" : "https://cdn11.bigcommerce.com/s-5ljyj9oebs/images/stencil/600x600/products/3108/33358/P091122185010_1__21735.1722864073.jpg?c=2"
+        },
+        { 
+            "id": 20,
+            "name" : "Caprese Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 18.5,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVV_R4--uZfIrgLbFUm4fCzl3zvrsyODk7g&s"
+        },
+        { 
+            "id": 21,
+            "name" : "Southwest Black Bean Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 13.9,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjtJ0m0Xi9fi802xuZ059sFHPhgzlfgdS7g&s"
+        },
+        { 
+            "id": 22,
+            "name" : "Harvest Apple Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 14.3,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCozQOJN0auB_ne56w3ZHM12J9CMY4MQ-2ug&s"
+        },
+        { 
+            "id": 23,
+            "name" : "Avocado Egg Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 12.5,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDWUd08KyRuOtz0T-9h47nwFs1qoBwX8S0A&s"
+        },
+        { 
+            "id": 24,
+            "name" : "Balsamic Roasted Vegetable Salad", 
+            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "price" : 17.0,
+            "image" : "https://img.buzzfeed.com/video-api-prod/assets/b76f75cdf9604d11911f669bc6f167d6/THUMB_1.jpg"
         }
-      
     ]
   }
   

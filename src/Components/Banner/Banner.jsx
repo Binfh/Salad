@@ -14,7 +14,7 @@ const Banner = () => {
                         <div className='col_banner'>
                             <h3>Fresh Healthy<span className='t1_banner'>Delicious Salads</span></h3>
                             <p className='des_banner'>Healthy foods to eat everyday, Tasty and healthy vegetables salad with fresh tomatoes, coriander leaves and more.</p>
-                            <div className='btn_banner'><Link className='link_btn_banner' to={'/menu'}>Order Now</Link></div>
+                            <div className='btn_banner'><Link className='link_btn_banner' to={'/menu'} onClick={() => window.scrollTo(0, 0)}>Order Now</Link></div>
                         </div>
                         <div className='col_banner ps'>
                             <div className='sub-banner rotating'> 

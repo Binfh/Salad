@@ -25,5 +25,95 @@
             margin-bottom: 48px;
             text-align: center;
         }
+
+        .row_menu{
+            box-sizing: border-box;
+            background: var(--bg-color);
+            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow-2);
+            border-left: 2px solid var(--primary-color);
+            margin-bottom: 20px;
+            transition: 0.3s;
+
+            .content_menu{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                
+                .info_menu{
+                    display: flex;
+                    align-items: center;
+
+                    .img_pr{
+                        max-width: 100%;
+                        width: 80px;
+                        margin-right: 14px;
+                        border-radius: 50%;
+                        display: block;
+                    }
+
+                    .name_pr{
+                        color: var(--heading-color);
+                        font-size: 23px;
+                        font-weight: bold;
+                        text-transform: capitalize;
+
+                        &:hover{
+                            text-decoration: none;
+                            transition: .5s all;
+                            color: var(--primary-color);
+                        }
+                    }
+
+                    p{
+                        margin-top: 4px;
+                        padding: 0;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: var(--heading-color);
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                }
+
+                .price_product{
+
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: var(--heading-color);
+                        font-family: 'Open Sans', sans-serif;
+
+                        strong{
+                            color: var(--primary-color);
+                            display: inline-block;
+                            font-size: 28px;
+                        }
+                    }
+                }
+
+                .order{
+
+                    .button_order{
+                        padding: 12px 36px 14px;
+                        font-size: 16px;
+                        color: #fff;
+                        border-radius: var(--border-radius-full);
+                        font-weight: bold;
+                        outline: none;
+                        border: none;
+                        background: var(--primary-color);
+                        transition: all 1.8s ease-in-out;
+
+                        &:hover{
+                            background-color: var(--secondary-color);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

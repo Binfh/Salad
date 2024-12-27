@@ -194,7 +194,7 @@ const Header = () => {
                     <Link className='logo' to={'/'}>Sa<FontAwesomeIcon className='ic_logo' icon={faSpoon}/>ads</Link>
                     <ul className='navb'>
                         {navbar.map((nav,idx) =>(
-                            <li className={`nav ${colorText === nav.name ? 'text-main' : 'text-black'}`} key={idx}><Link to={nav.href}>{nav.name.charAt(0).toUpperCase() + nav.name.slice(1)}</Link></li>
+                            <li className={`nav ${colorText === nav.name ? 'text-main' : 'text-black'}`} key={idx}><Link to={nav.href} onClick={() => window.scrollTo(0, 0)}>{nav.name.charAt(0).toUpperCase() + nav.name.slice(1)}</Link></li>
                         ))}
                         <input className='search' placeholder="Enter keyword..." type="text" /><FontAwesomeIcon className='ic_search' icon={faSearch}/>
                         <button className='btn_lr'>{signUp ? <FontAwesomeIcon icon={faUser}/> : <p> <span onClick={handleSignUpClick} className='sp'>Login</span>/<span onClick={handleRegisterClick} className='sp'>Register</span></p> }</button>

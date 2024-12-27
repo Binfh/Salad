@@ -14,7 +14,7 @@ const OurMenu = () => {
                             <p className='col1_mn'>Discover the incredible flavors at our restaurant. We are committed to delivering fresh and high-quality dishes that cater to every taste.</p>
                             <p className='col1_mn'>Enjoy a cozy atmosphere and professional service. Each dish is prepared with care, making your dining experience complete and unforgettable</p>
                         </div>
-                        <Link className='btn_mn' to={'/menu'}>What&#39;s on the Menu</Link>
+                        <Link className='btn_mn' to={'/menu'} onClick={() => window.scrollTo(0, 0)}>What&#39;s on the Menu</Link>
                     </div>
                 </div>
             </div>

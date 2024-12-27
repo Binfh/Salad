@@ -1,6 +1,7 @@
 import React from 'react'
 import './PopularIn.scss'
 import { image } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 
 const PopularIn = () => {
@@ -43,7 +44,7 @@ const PopularIn = () => {
                                 </div>
                             ))}
                        </div>
-                       <button className='btn-ppi'>View More</button>
+                       <Link to={'/menu'} onClick={() => window.scrollTo(0, 0)}><button className='btn-ppi'>View More</button></Link>
                     </div>
                 </div>
             </div>
