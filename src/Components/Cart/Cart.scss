@@ -1,0 +1,264 @@
+.cart_page{
+    margin-top: 90px;
+
+    .container_cart{
+        margin: 0 auto;
+        padding: 48px 24px;
+        min-height: calc(100vh - 90px);
+
+        @media (max-width: 480px) { 
+            max-width: 420px;
+        }
+    
+        @media (max-width: 768px) { 
+            max-width: 680px;
+        }
+    
+        @media (min-width: 1025px) { 
+            max-width: 1200px;
+        }
+
+        .cart_empty{
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 48px 15px;
+            margin-top: 80px;
+
+            .cart-ic{
+                margin-right: 20px;
+            }
+        }
+
+        .list_product{
+            padding: 48px;
+
+            .container_title{
+                display: grid;
+                grid-template-columns: repeat(6,1fr);
+                gap: 20px;
+            }
+
+            .title_in-cart{
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+
+            .prd{
+                display: grid;
+                grid-template-columns: repeat(6,1fr);
+                gap: 40px;
+                border: 1px solid ;
+                border-color: transparent transparent #b1aeae transparent;
+                padding: 15px 0;
+                align-items: center;
+
+                .img-prd{
+                    object-fit: cover;
+                    width: 80px;
+                    height: 70px;
+                }
+
+                h3{
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+
+                .ic-remove{
+                    cursor: pointer;
+                    padding: 5px;
+                    border-radius: 8px;
+
+                    &:hover{
+                        background-color: var(--primary-color);
+                        transition: all .5s ease;
+                    }
+                }
+            }
+
+            .first-prd{
+                border-top-color: #b1aeae !important;
+            }
+        }
+
+        .check-out{
+            padding: 24px 48px;
+            display: flex;
+            justify-content: space-between;
+
+            .cart-total{
+                width: 30%;
+
+                h3{
+                    margin-bottom: 30px;
+                    font-size: 35px;
+                }
+
+                .sub-total,.delivery-fee,.total{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #b1aeae;
+                    padding-bottom: 10px;
+                }
+
+                .delivery-fee,.total{
+                    padding-top: 20px;
+                }
+
+                .total{
+                    border-bottom-color: transparent;
+                    font-weight: 700;
+                }
+
+                button{
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    background-color: var(--primary-color);
+                    border-radius: 8px;
+                    margin-top: 20px;
+                    color: #fff;
+                }
+
+                .payment-method{
+                    margin-top: 20px;
+
+                    h2{
+                        font-style: 20px;
+                        font-weight: 400;
+                        padding: 20px 0;
+                    }
+
+                    .payment-options{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        label{
+
+                            input[type="radio"]{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .promo-code{
+            width: 40%;
+
+            padding-top: 24px;
+            
+            p{
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+
+            .box-ip-promo{
+                display: flex;
+                
+                input{
+                    width: 75%;
+                    outline: none;
+                    padding: 8px 10px;
+                    border: none;
+                    background-color: #d6d3d3;
+                    border-top-left-radius: 4px ;
+                    border-bottom-left-radius: 4px;
+                }
+    
+                button{
+                    padding: 8px 20px;
+                    background-color: #1d1c1c;
+                    color: #fff;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+.alert_payment {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(233, 92, 92);
+    border: 1px solid #ece2e3;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slide-in 1s forwards ;
+}
+
+@keyframes slide-in {
+0% {
+    transform: translateX(100%);
+    opacity: 0;
+}
+100% {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+.ic_close_payment{
+    float: right;
+    cursor: pointer;
+    padding-top: 4px;
+}
+
+.check-out-success {
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #fff; 
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+
+    span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #28a745; 
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555; 
+    }
+
+    .ic-close-modal{
+        float: right;
+        padding: 3px;
+        border: 1px solid #d5c7c7;
+        border-radius: 4px;
+
+        &:hover{
+            background-color: var(--primary-color);
+            border-color: transparent;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+    }
+}
+
+.over-lay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}

@@ -19,8 +19,8 @@
 }
 
 .py {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 58px;
 }
 
 @keyframes gradient {
@@ -53,28 +53,32 @@
     @media (min-width: 1025px) { 
         max-width: 1200px;
     }
-
+    
+    
     .row_feeling {
-        padding-top: 48px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        
+        padding-top: 38px;
         position: relative;
         overflow: hidden;
-        gap: 20px;
-
-        @media (max-width: 576px) {
-            padding-top: 24px;
-            grid-template-columns: 1fr;
-        }
-
+        height: 400px;
+    
         .slide-item {
+            position: absolute;
+            width: calc(50% - 10px);
             transition: all 0.5s ease;
             
             &.current {
+                left: 0;
                 transform: translateX(0);
             }
             
             &.next {
+                left: calc(50% + 10px);
+                transform: translateX(0);
+            }
+    
+            &.incoming {
+                left: calc(100% + 20px);
                 transform: translateX(0);
             }
             
@@ -85,6 +89,10 @@
                 }
                 
                 &.next {
+                    transform: translateX(-100%);
+                }
+    
+                &.incoming {
                     transform: translateX(-100%);
                 }
             }
@@ -110,6 +118,7 @@
             color: var(--heading-color);
             font-family: 'Open Sans', sans-serif;
             width: 90%;
+            height: 120px;
         }
 
         .name_feeling {
@@ -146,7 +155,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 30px;
 
         .dot {
             width: 12px;

@@ -33,12 +33,12 @@ const OurSpecialists = () => {
 
   return (
     <>
-        <div className='Our_Spe'>
+        <div id='chef' className='Our_Spe'>
             <div className='container_spe'>
               <h3 className='title_spe'>Our Specialists</h3>
               <div className="row_spe">
                 {ourChef.map((chef,idx) =>(
-                  <Link className='col_spe' to={''} key={idx}>
+                  <Link className='col_spe' key={idx}>
                     <div className='ov-img'><img src={chef.img} alt={chef.position} /></div>
                     <div>
                       <h4 className='name_chef'>{chef.name}</h4>

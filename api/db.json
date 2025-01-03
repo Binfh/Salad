@@ -3,171 +3,194 @@
         { 
             "id": 1,
             "name" : "Easy Pasta Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 19.5 ,
+            "des" : "A quick and easy pasta salad made with the freshest ingredients.",
+            "desFull": "This Easy Pasta Salad is a delightful dish featuring al dente pasta tossed with vibrant vegetables like cherry tomatoes and cucumbers. Enhanced with a zesty Italian dressing, this salad is perfect for a quick lunch, a picnic, or as a side dish for any meal.",
+            "price" : 19.5,
             "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m1.jpg"
         },
         { 
             "id": 2,
             "name" : "Rainbow Orzo Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 10.5 ,
+            "des" : "A colorful salad featuring orzo, fresh vegetables, and a unique dressing.",
+            "desFull": "Rainbow Orzo Salad is a feast for the eyes and palate, featuring colorful bell peppers, red onions, and herbs mixed with orzo pasta. A tangy lemon vinaigrette ties it all together, making this salad a perfect choice for a healthy, vibrant meal.",
+            "price" : 10.5,
             "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m2.jpg"
         },
         { 
             "id": 3,
             "name" : "Creamy Vegan Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 13.9 ,
+            "des" : "A creamy and delicious vegan salad perfect for a healthy meal.",
+            "desFull": "Creamy Vegan Salad combines a rich, plant-based cashew dressing with fresh greens, avocados, and roasted chickpeas. This salad is not only delicious but also a protein-packed option for anyone looking for a healthy and satisfying vegan meal.",
+            "price" : 13.9,
             "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m3.jpg"
         },
         { 
             "id": 4,
             "name" : "Broccoli Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 12.7 ,
+            "des" : "A wholesome salad with broccoli, nuts, and a refreshing dressing.",
+            "desFull": "Broccoli Salad is a wholesome dish featuring crisp broccoli florets, dried cranberries, toasted sunflower seeds, and a creamy, tangy yogurt-based dressing. This salad is both nutritious and bursting with flavor.",
+            "price" : 12.7,
             "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m4.jpg"
         },
         { 
             "id": 5,
             "name" : "Cherry Tomato Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 18.3 ,
+            "des" : "A vibrant salad with juicy cherry tomatoes and a tangy dressing.",
+            "desFull": "Cherry Tomato Salad is a refreshing dish that highlights the sweetness of ripe cherry tomatoes, combined with fresh basil leaves, mozzarella balls, and a drizzle of balsamic glaze. It's a perfect appetizer or side dish for any Italian-inspired meal.",
+            "price" : 18.3,
             "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m5.jpg"
         },
         { 
             "id": 6,
             "name" : "Healthy Taco Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 16.0 ,
+            "des" : "A healthy twist on taco salad, packed with fresh ingredients and bold flavors.",
+            "desFull": "Healthy Taco Salad is a vibrant mix of fresh lettuce, seasoned black beans, corn, diced tomatoes, and avocado slices. Topped with a tangy lime-cilantro dressing, this salad delivers all the bold flavors of tacos in a light, refreshing bowl.",
+            "price" : 16.0,
             "image" : "https://p.w3layouts.com/demos_new/template_demo/26-10-2021/salads-liberty-demo_Free/1194887043/web/assets/images/m6.jpg"
         },
         { 
             "id": 7,
             "name" : "Mediterranean Chickpea Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A delightful salad with chickpeas, herbs, and a Mediterranean flair.",
+            "desFull": "Mediterranean Chickpea Salad is a wholesome combination of protein-packed chickpeas, diced cucumbers, cherry tomatoes, and red onions. Tossed in a lemon-herb vinaigrette, this salad brings the flavors of the Mediterranean to your table.",
             "price" : 14.9,
             "image" : "https://aubreyskitchen.com/wp-content/uploads/2020/08/mediterranean-chickpea-salad-square.jpg"
         },
         { 
             "id": 8,
             "name" : "Caesar Salad with Croutons", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A classic Caesar salad topped with crunchy croutons and creamy dressing.",
+            "desFull": "Caesar Salad with Croutons features crisp romaine lettuce, Parmesan cheese, and golden croutons, all tossed in a creamy, homemade Caesar dressing. Perfect as a light main course or a side dish.",
             "price" : 15.5,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSARMfL_JIrXmdRiHBhQyAp1MLXxMBoQt_8MA&s"
         },
         { 
             "id": 9,
             "name" : "Quinoa Avocado Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A nourishing salad with quinoa, fresh avocado, and a zesty dressing.",
+            "desFull": "Quinoa Avocado Salad combines fluffy quinoa with creamy avocado slices, cherry tomatoes, and a tangy lime dressing. This superfood-packed salad is both nourishing and delicious.",
             "price" : 17.8,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgX5Dl6nIsTJYiildZpp53CMhMJ-7KHSUaGQ&s"
         },
         { 
             "id": 10,
             "name" : "Kale Cranberry Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A flavorful salad with kale, cranberries, and a sweet-tangy dressing.",
+            "desFull": "This Kale Cranberry Salad is a perfect mix of superfoods. Packed with fresh kale, dried cranberries, and a homemade sweet-tangy vinaigrette, this dish is both nutritious and delicious. Perfect as a side dish or a light lunch.",
             "price" : 11.3,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJD6x5NKm4oamPYTOx4VYD12gjqjbWP4LcQ&s"
         },
         { 
             "id": 11,
             "name" : "Avocado Mango Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A refreshing mix of creamy avocado and sweet mango with a citrus dressing.",
+            "desFull": "The Avocado Mango Salad combines creamy avocado and sweet mango with a tangy citrus dressing, creating a refreshing and flavorful dish. This salad is perfect for a light lunch or a side dish during warm weather.",
             "price" : 19.2,
             "image" : "https://img.taste.com.au/dYjhlJoQ/taste/2016/11/lettuce-avocado-and-mango-salad-59642-1.jpeg"
         },
         { 
             "id": 12,
             "name" : "Thai Peanut Noodle Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A tangy and flavorful Thai-inspired salad with peanut dressing.",
+            "desFull": "This Thai Peanut Noodle Salad brings bold flavors to the table with its tangy peanut dressing and vibrant mix of vegetables and noodles. It's the perfect balance of savory and slightly sweet, ideal for a light dinner or side dish.",
             "price" : 18.0,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbiwzmk7P4TZwjALdWf4KjQ9hiuQiaSK4gg&s"
         },
         { 
             "id": 13,
             "name" : "Grilled Chicken Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "Juicy grilled chicken on a bed of fresh greens with a zesty dressing.",
+            "desFull": "This Grilled Chicken Salad features tender, grilled chicken breast served over a bed of crisp greens and veggies, all topped with a tangy dressing. It’s a satisfying and healthy meal for any time of the day.",
             "price" : 20.5,
             "image" : "https://hips.hearstapps.com/hmg-prod/images/grilled-chicken-salad-index-6628169554c88.jpg?crop=0.8890484453220048xw:1xh;center,top&resize=1200:*"
         },
         { 
             "id": 14,
             "name" : "Fruit & Nut Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A sweet and crunchy salad with fresh fruits and toasted nuts.",
+            "desFull": "The Fruit & Nut Salad is a delightful blend of fresh fruits like apples and grapes paired with crunchy toasted nuts. Topped with a light dressing, it’s a perfect combination of sweetness and crunch.",
             "price" : 13.6,
             "image" : "https://wishesndishes.com/images/2013/08/Fruit-and-Nut-Salad-2.jpg"
         },
         { 
             "id": 15,
             "name" : "Spinach Strawberry Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A refreshing blend of spinach, juicy strawberries, and a light dressing.",
+            "desFull": "This Spinach Strawberry Salad features fresh spinach leaves paired with sweet, juicy strawberries. A light vinaigrette dressing adds a touch of zest, making it a perfect, refreshing side or light meal.",
             "price" : 14.5,
             "image" : "https://www.simplejoy.com/wp-content/uploads/2018/05/strawberry_spinach_salad_recipe_image.jpg"
         },
         { 
             "id": 16,
             "name" : "Greek Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A traditional Greek salad with fresh vegetables, olives, and feta cheese.",
+            "desFull": "The Greek Salad brings together the best of Mediterranean ingredients: crisp cucumbers, juicy tomatoes, Kalamata olives, and creamy feta cheese. All tossed together with a simple olive oil dressing, it’s a classic for any occasion.",
             "price" : 12.9,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVszQzT5Yler0fycOCa3f6d06GXPyjKxl7rg&s"
         },
         { 
             "id": 17,
             "name" : "Cucumber Dill Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A refreshing salad with crisp cucumbers and a light dill dressing.",
+            "desFull": "This Cucumber Dill Salad is a light and refreshing dish made with thinly sliced cucumbers and fresh dill. A tangy dressing ties it all together, making it a perfect side dish for any meal.",
             "price" : 10.8,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmCx2paso7bq0ASfVL2zVtF8nZu3QkczBpUg&s"
         },
         { 
             "id": 18,
             "name" : "Roasted Beet Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A vibrant salad with roasted beets, greens, and a balsamic glaze.",
+            "desFull": "This Roasted Beet Salad combines earthy roasted beets with fresh greens and a drizzle of balsamic glaze for a rich, savory taste. The perfect dish to brighten any meal with its bold colors and flavors.",
             "price" : 16.7,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Wv8lK2iEDC6eH1EA0EsTft3l5nwlzDnW6g&s"
         },
         { 
             "id": 19,
             "name" : "Asian Sesame Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "An Asian-inspired salad with sesame seeds and a tangy sesame dressing.",
+            "desFull": "The Asian Sesame Salad is bursting with flavor, featuring crunchy vegetables and a savory sesame dressing. Topped with sesame seeds, it’s a light yet flavorful dish that pairs perfectly with Asian cuisine.",
             "price" : 15.2,
             "image" : "https://cdn11.bigcommerce.com/s-5ljyj9oebs/images/stencil/600x600/products/3108/33358/P091122185010_1__21735.1722864073.jpg?c=2"
         },
         { 
             "id": 20,
             "name" : "Caprese Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
+            "des" : "A classic Italian salad with fresh mozzarella, tomatoes, and basil.",
+            "desFull": "This Caprese Salad is a timeless Italian classic made with fresh mozzarella, vine-ripened tomatoes, and fragrant basil. A drizzle of olive oil and balsamic vinegar completes this dish, offering a refreshing and flavorful experience.",
             "price" : 18.5,
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVV_R4--uZfIrgLbFUm4fCzl3zvrsyODk7g&s"
         },
         { 
             "id": 21,
-            "name" : "Southwest Black Bean Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 13.9,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjtJ0m0Xi9fi802xuZ059sFHPhgzlfgdS7g&s"
+            "name" : "Southwest Corn Salad", 
+            "des" : "A zesty salad with corn, beans, and a lime cilantro dressing.",
+            "desFull": "The Southwest Corn Salad is packed with sweet corn, black beans, and a tangy lime cilantro dressing. It’s a refreshing and zesty dish that makes a great side or topping for tacos and grilled meats.",
+            "price" : 14.7,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhvGwhWaSh41HyGiwThF9wze0MzTxoeqq4aA&s"
         },
         { 
             "id": 22,
-            "name" : "Harvest Apple Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 14.3,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCozQOJN0auB_ne56w3ZHM12J9CMY4MQ-2ug&s"
+            "name" : "Potato Egg Salad", 
+            "des" : "A comforting salad made with creamy potatoes and hard-boiled eggs.",
+            "desFull": "The Potato Egg Salad is a comforting classic, made with tender boiled potatoes, hard-boiled eggs, and a creamy dressing. It’s the perfect dish for barbecues, picnics, or as a side for any meal.",
+            "price" : 11.9,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26uEVkHSmVmKlJRx5n_L4LsyU_g7dFvmWew&s"
         },
         { 
             "id": 23,
-            "name" : "Avocado Egg Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 12.5,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDWUd08KyRuOtz0T-9h47nwFs1qoBwX8S0A&s"
+            "name" : "Carrot Ginger Salad", 
+            "des" : "A vibrant salad with shredded carrots and a ginger-infused dressing.",
+            "desFull": "This Carrot Ginger Salad features shredded carrots mixed with a fragrant ginger-infused dressing. It’s a healthy and refreshing salad that’s light yet full of flavor.",
+            "price" : 10.2,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHndqdhRS-GLHCb7dsiNqk1RA5QgWQqxoDiw&s"
         },
         { 
             "id": 24,
-            "name" : "Balsamic Roasted Vegetable Salad", 
-            "des" : "Sed ut perspiciatis unde omnis iste natus error sit.",
-            "price" : 17.0,
-            "image" : "https://img.buzzfeed.com/video-api-prod/assets/b76f75cdf9604d11911f669bc6f167d6/THUMB_1.jpg"
+            "name" : "Avocado Kale Salad", 
+            "des" : "A creamy avocado salad with kale and a tangy lemon dressing.",
+            "desFull": "This Avocado Kale Salad is a perfect blend of creamy avocado and nutrient-packed kale, topped with a tangy lemon dressing. It's both refreshing and filling, making it an ideal choice for a light lunch or side salad.",
+            "price" : 18.9,
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxKiCxqmcS6I8MvGohJh9XtgrJ1Z7wRYW-w&s"
         }
     ]
-  }
-  
+}

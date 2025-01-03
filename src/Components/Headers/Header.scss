@@ -275,3 +275,26 @@
 .overlay.active {
     display: flex; 
 }
+
+.btn_space{
+    margin-left: 10px;
+    font-style: 20px;
+    position: relative;
+}
+
+.btn-get-out{
+    cursor: pointer;
+}
+
+.btn_cart{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

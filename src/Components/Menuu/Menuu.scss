@@ -3,7 +3,7 @@
     padding: 48px 0;
 
     .container_menu{
-        padding: 48px 15px ;
+        padding: 48px 15px 0 ;
         margin: 0 auto;
         width: 100%;
         @media (max-width: 480px) { 
@@ -95,25 +95,212 @@
                     }
                 }
 
-                .order{
-
-                    .button_order{
-                        padding: 12px 36px 14px;
-                        font-size: 16px;
-                        color: #fff;
-                        border-radius: var(--border-radius-full);
-                        font-weight: bold;
-                        outline: none;
-                        border: none;
-                        background: var(--primary-color);
-                        transition: all 1.8s ease-in-out;
-
-                        &:hover{
-                            background-color: var(--secondary-color);
-                        }
+                .order {
+                  padding: 12px 36px 14px;
+                  outline: none;
+                  border: none;
+                  background: var(--primary-color);
+                  transition: all 0.3s ease-in-out;
+                  cursor: pointer;
+                  border-radius: var(--border-radius-full);
+                  width: 170px; 
+                  height: 50px; 
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative; 
+                
+                  .button_order {
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: bold;
+                    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+                  }
+                
+                  .quantity-control {
+                    position: absolute; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    opacity: 0; 
+                    visibility: hidden; 
+                    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+                
+                    .decrement,
+                    .increment {
+                      font-size: 16px;
+                      padding: 5px 8px;
+                      border-radius: 50%;
+                      background-color: #fff;
+                      cursor: pointer;
                     }
+                
+                    .decrement {
+                      margin-right: 20px;
+                    }
+                  }
+                
+                  &:hover {
+                    .button_order {
+                      opacity: 0; 
+                      visibility: hidden;
+                    }
+                
+                    .quantity-control {
+                      opacity: 1;
+                      visibility: visible;
+                    }
+                  }
                 }
+
             }
         }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 50px;
+          
+            .pagination-arrow {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: white;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          
+              &:hover:not(:disabled) {
+                background-color: var(--primary-color);
+                color: #fff;
+              }
+          
+              &:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+              }
+          
+              .arrow-icon {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          
+            .pagination-number {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: white;
+              cursor: pointer;
+              transition: all 0.3s ease;
+          
+              &:hover {
+                background-color: var(--primary-color);
+                color: #fff;
+              }
+          
+              &.active {
+                background-color: var(--primary-color);
+              }
+            }
+          }
     }
+}
+
+.content_menu.loading {
+    .img-skeleton {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 8px;
+    }
+  
+    .text-content {
+      flex: 1;
+      
+      .title-skeleton {
+        width: 70%;
+        height: 20px;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+  
+      .desc-skeleton {
+        width: 90%;
+        height: 16px;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+        border-radius: 4px;
+      }
+    }
+  
+    .price-skeleton {
+      width: 60px;
+      height: 24px;
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 4px;
+    }
+  
+    .button-skeleton {
+      width: 100px;
+      height: 36px;
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+      border-radius: 4px;
+    }
+  }
+  
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+}
+
+.alert_menu {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1000;
+  width: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgb(233, 92, 92);
+  border: 1px solid #ece2e3;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slide-in 1s forwards ;
+}
+
+@keyframes slide-in {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.ic_close_menu{
+  float: right;
+  cursor: pointer;
+  padding-top: 4px;
 }

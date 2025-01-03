@@ -19,7 +19,7 @@ const OurChef = () => {
                         <p className='des_chef' style={{marginTop:'16px'}}>
                             Our chefs are committed to using the finest ingredients, ensuring every dish is a masterpiece of flavor and presentation. Join us on a journey of taste and indulgence, where every bite tells a story.
                         </p>
-                        <Link className='btn_chef' to={'chef'}>See Our Chef&#39;s</Link>
+                        <Link className='btn_chef' to={'/about#chef'}>See Our Chef&#39;s</Link>
                     </div>
                     <div className="col-4_chef">
                         <img src={image.chef} alt="chef" />

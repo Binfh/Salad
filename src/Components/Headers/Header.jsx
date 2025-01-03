@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './Header.scss'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRightToBracket, faClose, faSearch, faSpoon, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRightToBracket, faCartShopping, faClose, faSearch, faSpoon, faUser } from '@fortawesome/free-solid-svg-icons'
 import { navbar } from '../../assets/assets'
 import { useNavbar } from '../../Context/NavbarContext'
 import { useSign } from '../../Context/SignContext'
 import { faWarning } from '@fortawesome/free-solid-svg-icons/faWarning'
+import { useCart } from '../../Context/CartContext'
 
 export const Register = ({setIsLogin}) => {
     const [alert, setAlert] = useState(false);
@@ -37,7 +38,7 @@ export const Register = ({setIsLogin}) => {
             {alert && (
                 <div className="alert">
                     <FontAwesomeIcon icon={faWarning} /> Please fill in all information!
-                    <FontAwesomeIcon className='ic_close' onClick={() =>setAlert(false)} icon={faClose}/>
+                    <FontAwesomeIcon className='ic_close' onClick={(e) => {e.stopPropagation(); setAlert(false);}}  icon={faClose}/>
                     <div className="progress-bar"></div>
                 </div>
             )}
@@ -51,14 +52,12 @@ export const Register = ({setIsLogin}) => {
                     id="username"
                     placeholder="Username"
                     className="ip"
-                    autoComplete="off"
                 />
                 <input
                     type="email"
                     id="email"
                     placeholder="Email"
                     className="ip"
-                    autoComplete="off"
                 />
                 <input
                     type="tel"
@@ -68,14 +67,12 @@ export const Register = ({setIsLogin}) => {
                     pattern="[0-9]{10,11}"
                     title="Please enter 10 to 11 digits"
                     className="ip"
-                    autoComplete="off"
                 />
                 <input
                     type="password"
                     id="password"
                     placeholder="Password"
                     className="ip"
-                    autoComplete="off"
                 />
                 <button type="submit" className="btn_submit">
                     Register
@@ -85,7 +82,7 @@ export const Register = ({setIsLogin}) => {
     );
 };
 
-export const Login = ({setSignUp,setIsLogin}) =>{
+export const Login = ({setSignUp,setIsLogin,setShowOverlay}) =>{
     const navigate = useNavigate();
     const [alert, setAlert] = useState(false);
     const handleSubmit = (e) => {
@@ -94,8 +91,10 @@ export const Login = ({setSignUp,setIsLogin}) =>{
 
         if (userInfo.email === e.target.email.value && userInfo.password === e.target.password.value) {
             setSignUp(true)
+            setShowOverlay(false)
             navigate('/'); 
-        } else {
+        }
+        else {
             setAlert(true);
             setTimeout(() => setAlert(false), 4000);
         }
@@ -109,8 +108,8 @@ export const Login = ({setSignUp,setIsLogin}) =>{
         <>
             {alert && (
                 <div className="alert">
-                    <FontAwesomeIcon icon={faWarning} /> Please fill in all information!
-                    <FontAwesomeIcon className='ic_close' onClick={() =>setAlert(false)} icon={faClose}/>
+                    <FontAwesomeIcon icon={faWarning} /> Wrong login information!
+                    <FontAwesomeIcon className='ic_close' onClick={(e) => {e.stopPropagation(); setAlert(false);}}  icon={faClose}/>
                     <div className="progress-bar"></div>
                 </div>
             )}
@@ -119,13 +118,28 @@ export const Login = ({setSignUp,setIsLogin}) =>{
                     <h1 className="title">Login</h1>
                     <FontAwesomeIcon onClick={handlePrev} className='ic_back-prev' icon={faArrowLeft}/>
                 </div>
-                <input type="email" id='email' placeholder='Email' className='ip' autoComplete='off' />
-                <input type="password" id='password' placeholder='Password' className='ip' autoComplete='off' />
+                <input type="email" id='email' placeholder='Email' className='ip'  />
+                <input type="password" id='password' placeholder='Password' className='ip'  />
                 <button type='submit' className='btn_submit'>Login</button>
             </form>
         </>
     )
 }
+
+export const CartIcon = () => {
+    const { cartCount } = useCart();
+    
+    return (
+      <Link to={'/cart'} className="btn_space" >
+        <FontAwesomeIcon
+          icon={faCartShopping}
+        />
+        {cartCount > 0 && (
+          <span className="btn_cart">{cartCount}</span>
+        )}
+      </Link>
+    );
+};
 
 const Header = () => {
     const {colorText,setColorText} = useNavbar()
@@ -141,6 +155,8 @@ const Header = () => {
         const matchedMenu = navbar.find(item => item.href === currentPath);
         if (matchedMenu) {
             setColorText(matchedMenu.name); 
+        }else{
+            setColorText('')
         }
     }, [location]); 
 
@@ -183,12 +199,15 @@ const Header = () => {
   
     const getOut = () =>{
         setSignUp(false)
+        window.scrollTo(0, 0);
         navigate('/')
     }
 
+    const whiteBackgroundPaths = ['/profile', '/cart'];
+
   return (
     <>
-        <div className={`header fixed ${isScrolled ? 'bg-white' : 'bg-tranparent'}`}>
+        <div className={`header fixed ${whiteBackgroundPaths.includes(location.pathname) || isScrolled ? 'bg-white' : 'bg-tranparent'}`}>
             <div className='container_header'>
                 <nav className='navbar'>
                     <Link className='logo' to={'/'}>Sa<FontAwesomeIcon className='ic_logo' icon={faSpoon}/>ads</Link>
@@ -197,21 +216,22 @@ const Header = () => {
                             <li className={`nav ${colorText === nav.name ? 'text-main' : 'text-black'}`} key={idx}><Link to={nav.href} onClick={() => window.scrollTo(0, 0)}>{nav.name.charAt(0).toUpperCase() + nav.name.slice(1)}</Link></li>
                         ))}
                         <input className='search' placeholder="Enter keyword..." type="text" /><FontAwesomeIcon className='ic_search' icon={faSearch}/>
-                        <button className='btn_lr'>{signUp ? <FontAwesomeIcon icon={faUser}/> : <p> <span onClick={handleSignUpClick} className='sp'>Login</span>/<span onClick={handleRegisterClick} className='sp'>Register</span></p> }</button>
-                        {/* {signUp ? <CartIcon/> : ''} */}
-                        {signUp ? <div className='ml-[10px] size-6'>
+                        {signUp ? <Link className='btn_space' to={'/profile'}><FontAwesomeIcon icon={faUser}/></Link> : <button className='btn_lr'><p><span onClick={handleSignUpClick} className='sp'>Login</span>/<span onClick={handleRegisterClick} className='sp'>Register</span></p></button> }
+                        {signUp ? <CartIcon/> : ''
+                        } 
+                        {signUp ? 
                             <FontAwesomeIcon
+                                    className='btn_space btn-get-out'
                                     onClick={getOut}
                                     icon={faArrowRightToBracket}
-                                    className=''
                             />
-                        </div> : ''}
+                            : ''}
                     </ul>
                 </nav>
             </div>
             {showOverlay && (
                 <div className={`overlay ${showOverlay ? 'active' : ''}`} onClick={closeOverlay}>
-                    {isLogin ? <Login setSignUp={setSignUp} setIsLogin={setIsLogin} /> : <Register setIsLogin={setIsLogin} />}
+                    {isLogin ? <Login setSignUp={setSignUp} setIsLogin={setIsLogin} setShowOverlay={setShowOverlay}/> : <Register setIsLogin={setIsLogin} />}
                 </div>
             )}
         </div>

@@ -31,36 +31,37 @@ const Feeling = () => {
     const [sliding, setSliding] = useState(false);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            handleSlide();
-        }, 3000);
-
+        const interval = setInterval(handleSlide, 3000);
         return () => clearInterval(interval);
     }, [currentIndex]);
 
     const handleSlide = () => {
         setSliding(true);
         setTimeout(() => {
-            setCurrentIndex((prev) => (prev + 1) % ds.length);
+            setCurrentIndex((prev) => prev === 2 ? 0 : prev + 1);
             setSliding(false);
         }, 500);
     };
 
-    const getDs = () => {
-        const nextIndex = (currentIndex + 1) % ds.length;
-        return [ds[currentIndex], ds[nextIndex]];
+    const getVisibleSlides = () => {
+        const firstSlide = ds[currentIndex];
+        const secondSlideIndex = currentIndex === 2 ? 0 : currentIndex + 1;
+        const secondSlide = ds[secondSlideIndex];
+        const thirdSlideIndex = secondSlideIndex === 2 ? 0 : secondSlideIndex + 1;
+        const thirdSlide = ds[thirdSlideIndex];
+        return [firstSlide, secondSlide, thirdSlide];
     };
 
-    return (
-        <section className="feeling py">
-            <div className="feeling-content">
-                <div className="container_feeling py-1">
-                    <div className="row_feeling">
-                        {getDs().map((d, idx) => (
-                            <div 
-                                key={idx} 
-                                className={`slide-item ${sliding ? 'sliding' : ''} ${idx === 0 ? 'current' : 'next'}`}
-                            >
+   return (
+       <section className="feeling py">
+           <div className="feeling-content">
+               <div className="container_feeling py-1">
+                   <div className="row_feeling">
+                       {getVisibleSlides().map((d, idx) => (
+                           <div key={idx} 
+                               className={`slide-item ${sliding ? 'sliding' : ''} 
+                               ${idx === 0 ? 'current' : idx === 1 ? 'next' : 'incoming'}`}
+                           >
                                 <q className="title_feeling">{d.title}</q>
                                 <p className="des_feeling">{d.des}</p>
                                 <h3 className="name_feeling">{d.name}</h3>
