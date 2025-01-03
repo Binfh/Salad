@@ -112,12 +112,12 @@ const Menuu = () => {
               <div className='row_menu' key={idx}>
                 <div className="content_menu">
                   <div className="info_menu">
-                    <Link to={'/detail_product'}>
+                    <Link to={`/${salad.id}`}>
                       <img className='img_pr' src={salad.image} alt={salad.name} />
                     </Link>
                     <div>
                       <h6>
-                        <Link className='name_pr' to={'/detail_product'}>
+                        <Link className='name_pr' to={`/${salad.id}`}>
                           {salad.name}
                         </Link>
                       </h6>

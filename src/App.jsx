@@ -10,6 +10,7 @@ import Menu from './Pages/Menu/Menu';
 import Profilee from './Pages/Profile/Profilee';
 import CartPage from './Pages/CartPage/CartPage';
 import { CartProvider } from './Context/CartContext';
+import Detail from './Pages/Detail/Detail';
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
               <Route path='/menu' element={<Menu/>}/>
               <Route path='/profile' element={<Profilee/>}/>
               <Route path='/cart' element={<CartPage/>}/>
+              <Route path='/:id' element={<Detail/>}/>
             </Routes>
           </CartProvider>
         </NavbarProvider>

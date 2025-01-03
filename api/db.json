@@ -158,7 +158,7 @@
             "des" : "A classic Italian salad with fresh mozzarella, tomatoes, and basil.",
             "desFull": "This Caprese Salad is a timeless Italian classic made with fresh mozzarella, vine-ripened tomatoes, and fragrant basil. A drizzle of olive oil and balsamic vinegar completes this dish, offering a refreshing and flavorful experience.",
             "price" : 18.5,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVV_R4--uZfIrgLbFUm4fCzl3zvrsyODk7g&s"
+            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcRlVV_R4--uZfIrgLbFUm4fCzl3zvrsyODk7g&s"
         },
         { 
             "id": 21,
@@ -166,7 +166,7 @@
             "des" : "A zesty salad with corn, beans, and a lime cilantro dressing.",
             "desFull": "The Southwest Corn Salad is packed with sweet corn, black beans, and a tangy lime cilantro dressing. It’s a refreshing and zesty dish that makes a great side or topping for tacos and grilled meats.",
             "price" : 14.7,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhvGwhWaSh41HyGiwThF9wze0MzTxoeqq4aA&s"
+            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcQhvGwhWaSh41HyGiwThF9wze0MzTxoeqq4aA&s"
         },
         { 
             "id": 22,
@@ -174,7 +174,7 @@
             "des" : "A comforting salad made with creamy potatoes and hard-boiled eggs.",
             "desFull": "The Potato Egg Salad is a comforting classic, made with tender boiled potatoes, hard-boiled eggs, and a creamy dressing. It’s the perfect dish for barbecues, picnics, or as a side for any meal.",
             "price" : 11.9,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26uEVkHSmVmKlJRx5n_L4LsyU_g7dFvmWew&s"
+            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcS26uEVkHSmVmKlJRx5n_L4LsyU_g7dFvmWew&s"
         },
         { 
             "id": 23,
@@ -182,7 +182,7 @@
             "des" : "A vibrant salad with shredded carrots and a ginger-infused dressing.",
             "desFull": "This Carrot Ginger Salad features shredded carrots mixed with a fragrant ginger-infused dressing. It’s a healthy and refreshing salad that’s light yet full of flavor.",
             "price" : 10.2,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHndqdhRS-GLHCb7dsiNqk1RA5QgWQqxoDiw&s"
+            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcSHndqdhRS-GLHCb7dsiNqk1RA5QgWQqxoDiw&s"
         },
         { 
             "id": 24,
@@ -190,7 +190,7 @@
             "des" : "A creamy avocado salad with kale and a tangy lemon dressing.",
             "desFull": "This Avocado Kale Salad is a perfect blend of creamy avocado and nutrient-packed kale, topped with a tangy lemon dressing. It's both refreshing and filling, making it an ideal choice for a light lunch or side salad.",
             "price" : 18.9,
-            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxKiCxqmcS6I8MvGohJh9XtgrJ1Z7wRYW-w&s"
+            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcQrxKiCxqmcS6I8MvGohJh9XtgrJ1Z7wRYW-w&s"
         }
     ]
 }
