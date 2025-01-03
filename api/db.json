@@ -166,7 +166,7 @@
             "des" : "A zesty salad with corn, beans, and a lime cilantro dressing.",
             "desFull": "The Southwest Corn Salad is packed with sweet corn, black beans, and a tangy lime cilantro dressing. It’s a refreshing and zesty dish that makes a great side or topping for tacos and grilled meats.",
             "price" : 14.7,
-            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcQhvGwhWaSh41HyGiwThF9wze0MzTxoeqq4aA&s"
+            "image" : "https://www.allrecipes.com/thmb/p4QXb2utOWF3Aau52ID1cb2GSy4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Zesty-Southwest-Corn-Salad-2x1-1-2000-3d6a708333584bfd8279f08f381321b7.jpg"
         },
         { 
             "id": 22,
@@ -174,7 +174,7 @@
             "des" : "A comforting salad made with creamy potatoes and hard-boiled eggs.",
             "desFull": "The Potato Egg Salad is a comforting classic, made with tender boiled potatoes, hard-boiled eggs, and a creamy dressing. It’s the perfect dish for barbecues, picnics, or as a side for any meal.",
             "price" : 11.9,
-            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcS26uEVkHSmVmKlJRx5n_L4LsyU_g7dFvmWew&s"
+            "image" : "https://www.laylita.com/recipes/wp-content/uploads/2021/12/Simple-potato-and-egg-salad-recipe.jpg"
         },
         { 
             "id": 23,
@@ -182,7 +182,7 @@
             "des" : "A vibrant salad with shredded carrots and a ginger-infused dressing.",
             "desFull": "This Carrot Ginger Salad features shredded carrots mixed with a fragrant ginger-infused dressing. It’s a healthy and refreshing salad that’s light yet full of flavor.",
             "price" : 10.2,
-            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcSHndqdhRS-GLHCb7dsiNqk1RA5QgWQqxoDiw&s"
+            "image" : "https://fitmencook.com/wp-content/uploads/2024/05/carrot-ginger-miso-salad-20.jpg"
         },
         { 
             "id": 24,
@@ -190,7 +190,7 @@
             "des" : "A creamy avocado salad with kale and a tangy lemon dressing.",
             "desFull": "This Avocado Kale Salad is a perfect blend of creamy avocado and nutrient-packed kale, topped with a tangy lemon dressing. It's both refreshing and filling, making it an ideal choice for a light lunch or side salad.",
             "price" : 18.9,
-            "image" : "https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcQrxKiCxqmcS6I8MvGohJh9XtgrJ1Z7wRYW-w&s"
+            "image" : "https://loveonetoday.com/wp-content/uploads/2018/01/Love-One-Today-Avocado-Recipes-Featured-avocado-kale-and-quinoa-salad.jpg"
         }
     ]
 }
