@@ -58,14 +58,14 @@ const SaladDetail = () => {
         if (!signUp) {
           setShowAlert(true); 
         } else {
-          addToCart();
+          addToCart(saladd);
         }
       };
     
     return (
         <div className="salad-detail">
             <div className="container-detail">
-                <img className="img-detail" src={saladd.image} alt={saladd.name} />
+                <div className="img-detail"><img src={saladd.image} alt={saladd.name} /></div>
                 <div className="text-detail">
                     <p className='desf'>&#34;{saladd.desFull}&#34;</p>
                     <div className='add-cart-id'>

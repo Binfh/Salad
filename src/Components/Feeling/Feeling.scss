@@ -42,21 +42,20 @@
     margin-right: auto;
     margin-left: auto;
 
-    @media (max-width: 480px) { 
+    @media (max-width: 767px) { 
         max-width: 420px;
     }
 
-    @media (max-width: 768px) { 
+    @media (min-width: 768px) and (max-width: 1023px) { 
         max-width: 680px;
     }
 
-    @media (min-width: 1025px) { 
+    @media (min-width: 1024px) { 
         max-width: 1200px;
     }
     
     
     .row_feeling {
-        
         padding-top: 38px;
         position: relative;
         overflow: hidden;
@@ -66,6 +65,15 @@
             position: absolute;
             width: calc(50% - 10px);
             transition: all 0.5s ease;
+
+            @media (max-width: 1023px) {
+                width: 100%;
+                left: 0 !important; 
+
+                &.next, &.incoming {
+                    display: none; 
+                }
+            }
             
             &.current {
                 left: 0;

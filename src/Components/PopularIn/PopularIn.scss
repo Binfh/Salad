@@ -17,15 +17,15 @@
     .container_ppi{
         padding: 48px 15px ;
         margin: 0 auto;
-        @media (max-width: 480px) { 
+        @media (max-width: 767px) { 
             max-width: 420px;
         }
     
-        @media (max-width: 768px) { 
+        @media (min-width: 768px) and (max-width: 1023px) { 
             max-width: 680px;
         }
     
-        @media (min-width: 1025px) { 
+        @media (min-width: 1024px) { 
             max-width: 1200px;
         }
 
@@ -33,6 +33,10 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 20px;
+
+            @media (max-width:1023px){
+                grid-template-columns: repeat(1,1fr);
+            }
 
             .img_of_content{
                 padding: 0 48px 0 12px;
@@ -50,6 +54,10 @@
 
             .heading_ppi{
                 margin-bottom: 48px;
+
+                @media (max-width:1023px){
+                    margin-bottom: 0;
+                }
 
                 h3{
                     font-size: 45px;

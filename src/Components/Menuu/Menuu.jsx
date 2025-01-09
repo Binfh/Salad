@@ -115,7 +115,7 @@ const Menuu = () => {
                     <Link to={`/${salad.id}`}>
                       <img className='img_pr' src={salad.image} alt={salad.name} />
                     </Link>
-                    <div>
+                    <div className='text-menu'>
                       <h6>
                         <Link className='name_pr' to={`/${salad.id}`}>
                           {salad.name}

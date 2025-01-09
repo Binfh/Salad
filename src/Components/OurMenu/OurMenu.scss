@@ -21,15 +21,15 @@
         margin: 0 auto;
         width: 100%;
 
-        @media (max-width: 480px) { 
+        @media (max-width: 767px) { 
             max-width: 420px;
         }
     
-        @media (max-width: 768px) { 
+        @media (min-width: 768px) and (max-width: 1023px) { 
             max-width: 680px;
         }
     
-        @media (min-width: 1025px) { 
+        @media (min-width: 1024px) { 
             max-width: 1200px;
         }
 
@@ -64,12 +64,29 @@
                         color: var(--primary-color);
                         font-weight: 600;
                     }
+
+                    @media (max-width: 767px) {
+                        font-size: 35px;
+                        line-height: 45px;
+                    }
                 }
 
                 .des_mn{
                     margin-top: 24px;
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
+
+                    @media (max-width: 767px) {
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(2, auto);
+                        gap: 20px;
+                        width: 310px;
+                    }
+
+                    @media (max-width: 700px) {
+                        background-color: rgb(255 255 255 / 72%);
+                        padding: 32px 16px;
+                    }
 
                     .col1_mn{
                         padding: 0 20px;
@@ -78,6 +95,10 @@
                         line-height: 28px;
                         color: var(--heading-color);
                         font-family: 'Open Sans', sans-serif;
+
+                        @media (max-width: 767px) {         
+                            font-size: 14px;
+                        }
                     }
                 }
 
@@ -93,6 +114,11 @@
                     display: inline-block;
                     background: var(--primary-color);
                     transition: all 1.8s ease-in-out;
+
+                    @media (max-width: 767px) {
+                        padding: 10px;
+                        font-size: 14px;
+                    }
                 }
             }
 

@@ -9,23 +9,28 @@
         grid-template-columns: repeat(2,1fr);
         align-items: center;
 
-        @media (max-width: 480px) { 
+        @media (max-width: 767px) { 
             max-width: 420px;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
         }
     
-        @media (max-width: 768px) { 
+        @media (min-width: 768px) and (max-width: 1023px) { 
             max-width: 680px;
         }
     
-        @media (min-width: 1025px) { 
+        @media (min-width: 1024px) { 
             max-width: 1200px;
         }
 
         .img-detail{
-            object-fit: cover;
-            width: 80%;
             padding-left: 50px;
-            border-radius: 8px;
+
+            img{
+                object-fit: cover;
+                width: 60%;
+                border-radius: 8px;
+            }
         }
 
         .text-detail{
@@ -39,6 +44,8 @@
             .add-cart-id{
                 display: flex;
                 gap: 30px;
+                justify-content: center;
+
                 .price-in-detail{
                     font-size: 30px;
                 }
@@ -71,4 +78,8 @@
     font-size: 100px;
     font-weight: bold;
     color: #333;
+
+    @media (max-width:767px) {
+        font-size: 80px;
+    }
 }

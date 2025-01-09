@@ -6,25 +6,34 @@
         padding: 48px 24px;
         min-height: calc(100vh - 90px);
 
-        @media (max-width: 480px) { 
-            max-width: 420px;
+        @media (max-width: 767px) { 
+            max-width: 450px;
         }
     
-        @media (max-width: 768px) { 
+        @media (min-width: 768px) and (max-width: 1023px) { 
             max-width: 680px;
         }
     
-        @media (min-width: 1025px) { 
+        @media (min-width: 1024px) { 
             max-width: 1200px;
         }
 
         .cart_empty{
             font-size: 100px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             padding: 48px 15px;
             margin-top: 80px;
+
+            @media (max-width:767px){
+                font-size: 40px;
+            }
+
+            @media (min-width:768px) and (max-width:1023px){
+                font-size: 70px;
+            }
 
             .cart-ic{
                 margin-right: 20px;
@@ -33,11 +42,21 @@
 
         .list_product{
             padding: 48px;
+            @media (max-width:768px){
+                display: flex;
+                overflow-x: auto;
+            }
 
             .container_title{
                 display: grid;
                 grid-template-columns: repeat(6,1fr);
                 gap: 20px;
+
+                @media (max-width:768px){
+                    grid-template-columns: repeat(1,1fr);
+                    width: 100%;
+                    margin-right: 10px;
+                }
             }
 
             .title_in-cart{
@@ -53,11 +72,30 @@
                 border-color: transparent transparent #b1aeae transparent;
                 padding: 15px 0;
                 align-items: center;
+                grid-auto-rows: 1fr;
+
+                @media (max-width:768px){
+                    grid-template-columns: repeat(1,1fr);
+                    width: 100%;
+                    padding: 0;
+                    border: none;
+                    gap: 20px;
+                    align-items: start;
+                    margin: 0px 10px;
+                }
+
+                @media (min-width: 768px) and (max-width: 1023px) { 
+                    gap: 20px;
+                }
 
                 .img-prd{
                     object-fit: cover;
                     width: 80px;
                     height: 70px;
+
+                    @media (min-width: 768px) and (max-width: 1023px) { 
+                        width: 60px;
+                    }
                 }
 
                 h3{
@@ -84,10 +122,15 @@
         .check-out{
             padding: 24px 48px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
 
             .cart-total{
                 width: 30%;
+
+                @media (max-width:767px){
+                    width: 100%;
+                }
 
                 h3{
                     margin-bottom: 30px;
@@ -123,7 +166,7 @@
                     margin-top: 20px;
 
                     h2{
-                        font-style: 20px;
+                        font-size: 20px;
                         font-weight: 400;
                         padding: 20px 0;
                     }
@@ -146,9 +189,11 @@
 
         .promo-code{
             width: 40%;
-
             padding-top: 24px;
-            
+            @media (max-width:767px){
+                width: 100%;
+            }
+
             p{
                 font-size: 16px;
                 margin-bottom: 12px;
@@ -182,27 +227,27 @@
 .alert_payment {
     position: fixed;
     top: 80px;
-    right: 20px;
+    left: 10px;
     z-index: 1000;
-    width: 300px;
+    width: 260px;
     padding: 10px;
     background-color: #ffffff;
     color: rgb(233, 92, 92);
     border: 1px solid #ece2e3;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    animation: slide-in 1s forwards ;
+    animation: slide-in-left 1s forwards ;
 }
 
-@keyframes slide-in {
-0% {
-    transform: translateX(100%);
-    opacity: 0;
-}
-100% {
-    transform: translateX(0);
-    opacity: 1;
-}
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .ic_close_payment{

@@ -49,15 +49,15 @@
     margin-right: auto;
     margin-left: auto;
 
-    @media (max-width: 480px) { 
+    @media (max-width: 767px) { 
         max-width: 420px;
     }
 
-    @media (max-width: 768px) { 
+    @media (min-width: 768px) and (max-width: 1023px) { 
         max-width: 680px;
     }
 
-    @media (min-width: 1025px) { 
+    @media (min-width: 1024px) { 
         max-width: 1200px;
     }
 
@@ -67,8 +67,9 @@
         padding-top: 48px;
         align-items: center;
 
-        @media (max-width:576px){
-            padding-top: 24px;
+        @media (max-width: 767px) { 
+            margin-top: 0;
+            padding-top: 0;
         }
 
         >*{
@@ -80,9 +81,13 @@
         }
 
         .col_banner{
-            @media (min-width:768px){
-                flex: 0 0 auto;
-                width: 50%;
+            flex: 0 0 auto;
+            width: 50%;
+
+            @media (max-width: 767px)  { 
+                width: 100%;
+                padding-top: 0;
+                margin-top: 0;
             }
 
             h3{
@@ -91,14 +96,19 @@
                 line-height: 82px;
                 font-weight: 700;
 
+                @media (max-width: 767px) { 
+                    padding-top: 0;
+                    margin-top: 0;
+                }
+
+                @media (max-width: 1023px) { 
+                    font-size: 45px;
+                    line-height: 55px;
+                }
+
                 .t1_banner{
                     font-weight: 100;
                     display: block;
-                }
-
-                @media (min-width:992px){
-                    padding-bottom: 8px;
-                    margin-bottom: 24px;
                 }
             }
 
@@ -106,6 +116,11 @@
                 font-size: 18px;
                 line-height: 30px;
                 width: 95%;
+
+                @media (max-width: 1023px) { 
+                    font-size: 16px;
+                    line-height: 28px;
+                }
             }
 
             .btn_banner{
@@ -139,6 +154,20 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+
+                    @media (max-width: 767px) { 
+                        max-width: 300px;
+                        visibility: hidden;
+                    }
+                
+                    @media (min-width: 768px) and (max-width: 1023px) { 
+                        max-width: 350px;
+                        padding-left: 20px;
+                    }
+                
+                    @media (min-width: 1024px) { 
+                        max-width: 400px;
+                    }
                 }
             }
             
@@ -158,6 +187,11 @@
 .py-1{
     padding-top: 24px;
     padding-bottom: 24px;
+
+    @media (max-width: 767px) { 
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
 
 .ps{

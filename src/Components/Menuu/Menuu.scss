@@ -6,15 +6,15 @@
         padding: 48px 15px 0 ;
         margin: 0 auto;
         width: 100%;
-        @media (max-width: 480px) { 
+        @media (max-width: 767px) { 
             max-width: 420px;
         }
     
-        @media (max-width: 768px) { 
+        @media (min-width: 768px) and (max-width: 1023px) { 
             max-width: 680px;
         }
     
-        @media (min-width: 1025px) { 
+        @media (min-width: 1024px) { 
             max-width: 1200px;
         }
 
@@ -41,10 +41,19 @@
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
+
+                @media (min-width:768px) and (max-width:1023px){
+                  justify-content: space-around; 
+                }
                 
                 .info_menu{
                     display: flex;
                     align-items: center;
+                    width: 70%;
+
+                    @media (max-width:1023px){
+                      width: 100%; 
+                    }
 
                     .img_pr{
                         max-width: 100%;
@@ -54,26 +63,34 @@
                         display: block;
                     }
 
-                    .name_pr{
-                        color: var(--heading-color);
-                        font-size: 23px;
-                        font-weight: bold;
-                        text-transform: capitalize;
+                    .text-menu{
+                      @media (max-width:767px){
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+                      }
 
-                        &:hover{
-                            text-decoration: none;
-                            transition: .5s all;
-                            color: var(--primary-color);
-                        }
-                    }
-
-                    p{
-                        margin-top: 4px;
-                        padding: 0;
-                        font-size: 16px;
-                        line-height: 28px;
-                        color: var(--heading-color);
-                        font-family: 'Open Sans', sans-serif;
+                      .name_pr{
+                          color: var(--heading-color);
+                          font-size: 23px;
+                          font-weight: bold;
+                          text-transform: capitalize;
+  
+                          &:hover{
+                              text-decoration: none;
+                              transition: .5s all;
+                              color: var(--primary-color);
+                          }
+                      }
+  
+                      p{
+                          margin-top: 4px;
+                          padding: 0;
+                          font-size: 16px;
+                          line-height: 28px;
+                          width: 100%;
+                          color: var(--heading-color);
+                          font-family: 'Open Sans', sans-serif;
+                      }
                     }
                 }
 
@@ -275,28 +292,28 @@
 
 .alert_menu {
   position: fixed;
-  top: 80px;
-  right: 20px;
-  z-index: 1000;
-  width: 300px;
-  padding: 10px;
-  background-color: #ffffff;
-  color: rgb(233, 92, 92);
-  border: 1px solid #ece2e3;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: slide-in 1s forwards ;
+    top: 80px;
+    left: 10px;
+    z-index: 1000;
+    width: 260px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(233, 92, 92);
+    border: 1px solid #ece2e3;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slide-in-left 1s forwards ;
 }
 
-@keyframes slide-in {
-  0% {
-      transform: translateX(100%);
-      opacity: 0;
-  }
-  100% {
-      transform: translateX(0);
-      opacity: 1;
-  }
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .ic_close_menu{
@@ -304,3 +321,4 @@
   cursor: pointer;
   padding-top: 4px;
 }
+
